@@ -5,13 +5,15 @@
 <form id="frm1" action="/action_page.php">
   Email: <input type="text" name="email">
   Subscribe: <input type="text" name="subscribe"><br><br>
-  <input type="button" onclick="myFunction()" value="Submit">
 </form>
-
+<button id="btn" type="button" class="button">Click me!</button>
 <script>
-function myFunction() {
-  document.getElementById("frm1").submit();
-}
+const btn = document.getElementById('btn');
+
+btn.addEventListener('click', function onClick() {
+  btn.style.backgroundColor = 'salmon';
+  btn.style.color = 'white';
+});
 </script>
 
 </body>
