@@ -29,11 +29,13 @@
 </head>
 <body>
 
-<form id="frm1" action="/action_page.php">
-  Email: <input type="text" name="email">
-  Subscribe: <input type="text" name="subscribe"><br><br>
+<form id="frm1" method="get" action="/action_page.php">
+  <label for="fname">Email:</label>
+  <input type="text" id="email" name="email">
+  <label for="lname">Subscribe:</label>
+  <input type="text" id="subscribe" name="subscribe">
 </form>
-<button class="button button1">Confirm</button>
+<button type="submit" form="frm1" value="Submit" class="button button1">Confirm</button>
 
 </body>
 </html>
