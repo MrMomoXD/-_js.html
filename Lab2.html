@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+    <h3>This is an interesting project where you specify text and with just a button it will generate an HTML web page with some styling.</h3>
+
+    <input type="text" id="myText" value="">
+
+    <p>Click the "Confirm" button to create HTML page</p>
+
+    <button onclick="myFunction()">Confirm</button>
+    <!--<p id="demo">Your text will be here</p>-->
+
+    <script>
+        function myFunction() {
+            var opened = window.open("");
+            var x = document.getElementById("myText").value;
+            FinalOutput = "<html><head><style>body{background-color: powderblue;font-family: verdana;font-size: 300%;text-align:center;color: red;}</style></head><body>" + x + "</body></html>";
+            opened.document.write(FinalOutput);
+            //<head><style>body{background-color:DodgerBlue;}</style></head>
+        }
+    </script>
+
+</body>
+</html>
