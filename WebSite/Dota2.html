@@ -1,0 +1,280 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>Dota 2</title>
+		<meta charset="UTF-8">		
+		<style>
+			html {
+				overflow:  hidden;
+			}
+			a {
+				color: #ff0000;
+				text-decoration: none;
+			}
+			a:hover {
+				color: #ff0000;
+			}
+			a:visited {
+				color: #ff0000;
+			}
+			a:active {
+				color: #ff0000;
+			}
+			.PHI {
+				padding: 2px 3px;
+				margin-top:	25px;
+				margin-left: 30px;
+				font-size: 20pt;
+			}
+			#about {
+				padding: 2px 3px;
+				margin-top:	25px;
+				margin-left: 80px;
+				font-size: 20pt;
+			}
+			.MainMenu {
+                text-align: center;
+				width: auto;
+				opacity: 95%;
+				position: fixed;
+				top: 20px;
+			}
+			#ra {
+				width: auto;
+				height: 80px;
+				top: 20px;
+				border-radius: 25px;
+				position: relative;
+				opacity: 80%;
+			}
+            .rec {
+				background: #1d1d1d;
+			}
+			.UppMenu {
+				color: #ff0000;
+			}
+			#Author {
+				position: fixed;
+				bottom: -4px; left: 8px;
+				opacity: 80%;
+			}
+			.EL {
+				font-size: 10pt;
+				letter-spacing: 2px;
+				color: #ff0000;
+			}
+			#AutoRect {
+				width: 180px;
+				height: 25px;
+				bottom: 5px; left: 3px;
+				border-radius: 8px;
+				position: fixed;
+				opacity: 65%;
+			}
+			#signin {
+                margin: auto;
+				width: 500px;
+				height: 320px;
+				border-radius: 16px;
+				position: relative;
+				opacity: 90%;
+			}
+			.sign {
+                font-style: italic;
+				text-align: center;
+				font-size: 30pt;
+				color: #ff0000;
+				position: relative;
+				top: 20px;
+			}
+			.link {
+				color: #ffb2b2;
+				cursor: pointer;
+				font-size: inherit;
+				letter-spacing: 2px;
+				font-weight: inherit;
+			}
+			.email {
+				width: 200px;
+				height: 30px;
+				padding: 12px 20px;
+				margin: 30px 0;
+				display: inline-block;
+				border: 1px solid #d4d4d4;
+				border-radius: 4px;
+				box-sizing: border-box;
+				background-color: #ffb2b2;
+			}
+			.password {
+				width: 300px;
+				height: 30px;
+				padding: 12px 20px;
+				margin: 8px 0;
+				display: inline-block;
+				border: 1px solid #d4d4d4;
+				border-radius: 4px;
+				box-sizing: border-box;
+				background-color: #ffb2b2;
+			}
+			.write {
+				color: #ff0000;
+				font-size: 20pt;
+			}
+			.goto {
+				border-spacing: 20px 8px;
+			}
+			.in {
+				width: 150px;
+				background-color: #ff0000;
+				color: white;
+				font-size: 15pt;
+				padding: 6px 8px;
+				border: none;
+				border-radius: 8px;
+				cursor: pointer;
+			}
+			.in:hover {
+				background-color: #ff0000;
+			}
+			.into {
+				text-align: center;
+				height: 50px;
+			}
+			#facts {
+                margin: auto;
+				width: right;
+				height: 320px;
+				border-radius: 100px;
+				position: relative;
+				opacity: 90%;
+			}
+			.facto {
+				text-align: center;
+				font-size: 30pt;
+				position: relative;
+				top: 20px;
+                color: #ff0000;
+			}
+			.defacto {
+				text-align: center;
+				position: relative;
+				top: 30px;
+			}
+			.defactos {
+                text-align: center;
+				margin: 25px;
+				font-size: 20pt;
+				color: #ff0000;
+			}
+		</style>
+		</head>
+	<body  background="https://images2.alphacoders.com/474/474206.jpg" 
+          style="background-size: cover">
+		<div class="rec" id="ra"></div>
+		<div class="MainMenu">
+			<table>
+				<tbody>
+					<tr>
+						<td class="UppMenu">
+							<a href="data\About.html" target="_blank">
+								<div id="about">About</div>
+							</a>
+						</td>
+						<td class="UppMenu">
+							<a href="data\Popularplayers.html" target="_blank">
+								<div class="PHI">Popular&nbsp;players</div>
+							</a>
+						</td>
+						<td class="UppMenu">
+							<a href="data\Heroes.html" target="_blank">
+								<div class="PHI">Heroes</div>
+							</a>
+						</td>
+						<td class="UppMenu">
+							<a href="data\Items.html" target="_blank">
+								<div class="PHI">Items</div>
+							</a>
+						</td>
+						<td class="UppMenu">
+							<a href="https://www.youtube.com/watch?v=GRXAaebSCOc&ab_channel=NoobFromUA" target="_blank">
+								<div class="PHI">2019&nbsp;Champions</div>
+							</a>
+						</td>
+						<td class="UppMenu">
+							<a href="https://www.youtube.com/watch?v=SQ-CT4lev3s&ab_channel=Danta" target="_blank">
+								<div class="PHI">2022&nbsp;Guide for beginners</div>
+							</a>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="rec" id="signin">
+			<div>
+				<p class="sign">
+					Sign&nbsp;in&nbsp;or&nbsp;
+					<a href="data\Registration.html" target="_blank">
+						<span class="link">Sign&nbsp;up</span>
+					</a>
+				</p>
+			</div>
+			<div>
+				<table class="goto">
+					<tbody>
+						<form action="data/data.php" method="post">
+							<div><tr>
+								<div class="text">
+									<td>
+										<label for="email" class="write">Email</label>
+									</td>
+								</div>
+								<div>
+									<td>
+										<input type="email" id="email" name="email" class="email" maxlength="30" placeholder="Your email.." required>
+									</td>
+								</div>
+							</tr></div>
+							<div><tr>
+								<div class="text">
+									<td>
+										<label for="password" class="write">Password</label>
+									</td>
+								</div>
+								<div>
+									<td>
+										<input type="password" id="password" name="password" class="password" maxlength="40" minlength="8" placeholder="Your password.." required>
+									</td>
+								</div>
+							</tr></div>
+							<div><tr>
+									<div>
+										<td colspan="2" class="into">
+											<input type="submit" name="submit"value="Submit" class="in">
+										</td>
+									</div>
+							</tr></div>
+						</form>
+					</tbody>
+				</table>
+			</div>
+		</div>
+		<div class="rec" id="facts">
+			<div>
+				<p class="facto">
+					Fun&nbsp;facts&nbsp;about&nbsp;Dota 2.
+				</p>
+			</div>
+			<div>
+				<ol class="defacto">
+					<div><li class="defactos">The most popular game in the world.</li></div>
+					<div><li class="defactos">Takes all your free time.</li></div>
+					<div><li class="defactos">For Dota 2 you can live.</li></div>
+				</ol>
+			</div>
+		</div>
+		<div class="rec" id="AutoRect"></div>
+		<div id="Author">
+			<p class="EL"><strong>Author:&nbsp;Eriks Latvels</strong></p>
+		</div>
+	</body>
+</html>

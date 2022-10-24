@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Registration</title>
+		<meta charset="UTF-8">
+		<link href="reg.css" rel="stylesheet">
+	</head>
+	<body bgcolor="#9eaeff" background="http://cdn.dota2.com/apps/dota2/images/blogfiles/ogma_flockhearts_gamble_blg975z.jpg">
+		<div class="element" background="#d4d4d4">
+			<table>
+				<tbody>
+					<form action="connect.php" method="post">
+						<div><tr>
+							<div class="text">
+								<td>
+									<label for="fname" class="big">First Name</label>
+								</td>
+							</div>
+							<div class="field">
+								<td>
+									<input type="text" id="fname" name="firstname" class="name" maxlength="50" placeholder="Your name.." required>
+								</td>
+							</div>
+						</tr></div>
+						<div><tr>
+							<div class="text">
+								<td>
+									<label for="lname" class="big">Last Name</label>
+								</td>
+							</div>
+							<div class="field">
+								<td>
+									<input type="text" id="lname" name="lastname" class="name" maxlength="50" placeholder="Your surname.." required>
+								</td>
+							</div>
+						</tr></div>
+						<div><tr>
+							<div class="text">
+								<td>
+									<label for="country" class="big">Country</label>
+								</td>
+							</div>
+							<div class="field">
+								<td>
+									<input type="text" id="country" name="country" class="country" maxlength="60" placeholder="Your country.." required>
+								</td>
+							</div>
+						</tr></div>
+						<div><tr>
+							<div class="text">
+								<td>
+									<label for="email" class="big">Email</label>
+								</td>
+							</div>
+							<div class="field">
+								<td>
+									<input type="email" id="country" name="email" class="country" maxlength="40" placeholder="xxx@gmail or different.." required>
+								</td>
+							</div>
+						</tr></div>
+						<div><tr>
+							<div class="text">
+								<td>
+									<label for="nickname" class="big">Nickname</label>
+								</td>
+							</div>
+							<div class="field">
+								<td>
+									<input type="text" id="nickname" name="nickname" class="nickname" maxlength="20" placeholder="Your nickname (will be displayed on the site).." required>
+								</td>
+							</div>
+						</tr></div>
+						<div><tr>
+							<div class="text">
+								<td>
+									<label for="password" class="big">Password</label>
+								</td>
+							</div>
+							<div class="field">
+								<td>
+									<input type="text" id="password" name="password" class="country" maxlength="40" minlength="8" placeholder="Your password (not qwerty).." required>
+								</td>
+							</div>
+						</tr></div>
+						<div><tr>
+								<div id="message">
+									<td colspan="2"><span id="letter" class="invalid"> Min 1 <b>lowercase</b> letter</span>
+									<span id="capital" class="invalid">  Min 1 <b>capital (uppercase)</b> letter</span>
+									<span id="number" class="invalid">  Min 1 <b>number</b></span>
+                                        <span id="length" class="invalid"> Min <b>8 characters</b></span></td>
+								</div>
+						</tr></div>
+						<div><tr>
+								<div>
+									<td colspan="2">
+										<input type="submit" value="Submit" class="subm">
+									</td>
+								</div>
+						</tr></div>
+					</form>
+				</tbody>
+			</table>
+		</div>
+		<script>
+			var password = document.getElementById("password");
+			var letter = document.getElementById("letter");
+			var capital = document.getElementById("capital");
+			var number = document.getElementById("number");
+			var length = document.getElementById("length");
+			var message = document.getElementById("message")
+				password.onfocus = function() {
+					document.getElementById("message").style.display = "block";
+				}
+				password.onblur = function() {
+					document.getElementById("message").style.display = "none";
+				}
+				password.onkeyup = function() {
+					var lowerCaseLetters = /[a-z]/g;
+					if(password.value.match(lowerCaseLetters)) {  
+						letter.classList.remove("invalid");
+						letter.classList.add("valid");
+					} else {
+						letter.classList.remove("valid");
+						letter.classList.add("invalid");
+					}
+					var upperCaseLetters = /[A-Z]/g;
+					if(password.value.match(upperCaseLetters)) {  
+						capital.classList.remove("invalid");
+						capital.classList.add("valid");
+					} else {
+						capital.classList.remove("valid");
+						capital.classList.add("invalid");
+					}
+					var numbers = /[0-9]/g;
+					if(password.value.match(numbers)) {  
+						number.classList.remove("invalid");
+						number.classList.add("valid");
+					} else {
+						number.classList.remove("valid");
+						number.classList.add("invalid");
+					}
+					if(password.value.length >= 8) {
+						length.classList.remove("invalid");
+						length.classList.add("valid");
+					} else {
+						length.classList.remove("valid");
+						length.classList.add("invalid");
+					}
+				}	
+		</script>
+	</body>
+</html>
